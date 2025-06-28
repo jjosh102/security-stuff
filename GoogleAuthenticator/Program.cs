@@ -106,7 +106,7 @@ class Program
 
     QRCodeGenerator qrGenerator = new QRCodeGenerator();
     QRCodeData qrCodeData = qrGenerator.CreateQrCode(uri, QRCodeGenerator.ECCLevel.Q);
-    PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
+    PngByteQRCode qrCode = new(qrCodeData);
     byte[] qrCodeAsPngByteArr = qrCode.GetGraphic(20);
 
     File.WriteAllBytes(fullPath, qrCodeAsPngByteArr);

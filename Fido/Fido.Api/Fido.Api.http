@@ -1,0 +1,6 @@
+@Fido.Api_HostAddress = http://localhost:5232
+
+GET {{Fido.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
